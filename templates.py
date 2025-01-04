@@ -20,7 +20,7 @@ list_of_files=[
     f'src/{package_name}/utils/utils.py'
     'notebooks/research.ipynb',
     'notebooks/EDA.ipynb',
-    'notebooks/model_trainig',
+    'notebooks/model_training.ipynb',
     'notebooks/data/.gitkeep',
     'requirements.txt',
     'setup.py',

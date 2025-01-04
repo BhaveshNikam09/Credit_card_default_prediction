@@ -1,7 +1,9 @@
 pandas 
+scikit-learn
 numpy
 matplotlib
 seaborn
-scikit-learn
+pandas-profiling
 flask
-os
+mlflow
+dvc
