@@ -21,7 +21,7 @@ class DataIngestion:
         try:
             logging.info("Reading raw data")
             
-            file_path=Path('notebooks/data/Credit_Card.csv')
+            file_path=Path('notebooks/data/Credit_Card_new.csv')
             data=pd.read_csv(file_path)
             logging.info("Raw data read successfully")
 
