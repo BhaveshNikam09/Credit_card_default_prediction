@@ -43,4 +43,13 @@ def evaluate_model(X_train,y_train,X_test,y_test,model):
         logging.info('error occured in the evaluate model')
         raise custom_exception(e,sys)
     
+    
+    
+def name():
+    try :
+        pass
+    
+    except Exception as e:
+        logging.info('error occured in the ')
+        raise custom_exception(e,sys)
 
