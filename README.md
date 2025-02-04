@@ -36,8 +36,8 @@ The dataset used in this project is typically from sources like Kaggle or UCI Ma
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/credit-card-default-prediction.git
-    cd credit-card-default-prediction
+    git clone https://github.com/BhaveshNikam09/Credit_card_default_prediction
+    cd credit_card_default_prediction
     ```
 
 2. **Install the Required Dependencies**
@@ -54,11 +54,11 @@ The dataset used in this project is typically from sources like Kaggle or UCI Ma
 4. **Run the Python Script**
     Alternatively, you can run the Python script to train and evaluate the models:
     ```bash
-    python credit_card_default_prediction.py
+    python app.py
     ```
 
 5. **Optional: Deploy the Model**
-    If you want to deploy the model as a web application, you can use **Flask** or **FastAPI**. Instructions for deployment can be found in the `deployment/` directory.
+    If you want to deploy the model as a web application, you can use **Flask**  Instructions for deployment can be found in the  app.py file .
 
 ## Model Evaluation
 
@@ -76,7 +76,7 @@ The dataset used in this project is typically from sources like Kaggle or UCI Ma
 This project demonstrates the use of machine learning models for predicting credit card defaults, which can be helpful for financial institutions in assessing the risk of their customers. The models can be further improved with more sophisticated feature engineering, advanced models like **XGBoost**, or **Deep Learning** models.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](MIT) file for details.
 
 ## Acknowledgments
 - The dataset used is from the **UCI Machine Learning Repository** or **Kaggle**.
