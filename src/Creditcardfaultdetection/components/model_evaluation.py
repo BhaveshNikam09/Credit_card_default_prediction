@@ -1,5 +1,4 @@
 import os
-import numpy as np
 import mlflow
 import mlflow.sklearn
 import matplotlib.pyplot as plt
@@ -37,11 +36,21 @@ class ModelEvaluation:
             model_path = os.path.join("artifacts", "model.pkl")
             model = load_obj(model_path)
             
-            mlflow.set_registry_uri("https://dagshub.com/BhaveshNikam09/Credit_card_default_prediction.mlflow")
-            tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+            # Ensure this URL is correct for your remote MLflow instance
+            mlflow.set_registry_uri('https://dagshub.com/BhaveshNikam09/Credit_card_default_prediction.mlflow')
             
+            tracking_uri = mlflow.get_tracking_uri()
+            tracking_url_type_store = urlparse(tracking_uri).scheme
+            
+            print(f"Tracking URI: {tracking_uri}")
             print(f"Tracking store type: {tracking_url_type_store}")
             
+            # Ensure that MLflow is using the correct tracking URI
+            if tracking_url_type_store == "file":
+                print("Using local MLflow server (file-based store).")
+            else:
+                print("Using remote MLflow server.")
+
             with mlflow.start_run():
                 predicted_qualities = model.predict(X_test)
 
@@ -61,8 +70,11 @@ class ModelEvaluation:
                 # Log the model in MLflow with signature
                 if tracking_url_type_store != "file":
                     mlflow.sklearn.log_model(model, "model", registered_model_name="ml_model", signature=signature)
+                    print("Model logged to remote registry.")
                 else:
                     mlflow.sklearn.log_model(model, "model", signature=signature)
+                    print("Model logged locally.")
 
         except Exception as e:
+            print(f"Error: {e}")
             raise e

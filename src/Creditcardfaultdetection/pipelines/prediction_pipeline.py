@@ -25,10 +25,11 @@ class predictPipeline:
             prediction = model.predict(transformed_features)
 
             if prediction == 0:
-                return "Alert: Fraudulent activity detected for this user."
+                 return "No payment default detected for this user."
             else:
-                return "No fraud detected for this user."
-    
+                return "Alert: Payment default detected for this user."
+
+                    
         except Exception as e:
             raise custom_exception(e, sys)
 
