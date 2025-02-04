@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1738568889338
+current_stage: None
+description: ''
+last_updated_timestamp: 1738568889338
+name: Credit Card Fraud Detection
+run_id: 57f06232b1024559937fc8a90d1492d0
+run_link: ''
+source: file:///D:/ML/Credit%20card%20fraud%20detection/mlruns/0/57f06232b1024559937fc8a90d1492d0/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///D:/ML/Credit%20card%20fraud%20detection/mlruns/0/57f06232b1024559937fc8a90d1492d0/artifacts/model
+user_id: null
+version: 1

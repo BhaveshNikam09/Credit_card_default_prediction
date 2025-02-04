@@ -21,7 +21,7 @@ class DataIngestion:
         try:
             logging.info("Reading raw data")
             
-            file_path=Path('notebooks/data/Credit_Card_new.csv')
+            file_path=Path("notebooks/data/Credit_Card.csv")
             data=pd.read_csv(file_path)
             logging.info("Raw data read successfully")
 
@@ -48,4 +48,4 @@ class DataIngestion:
                        
         except Exception as e:
             logging.error(f"Error in reading raw data: {str(e)}")
-            raise custom_exception.DataIngestionException("Error in reading raw data")
+            raise custom_exception(e,sys)

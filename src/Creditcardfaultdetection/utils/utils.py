@@ -45,11 +45,12 @@ def evaluate_model(X_train,y_train,X_test,y_test,model):
     
     
     
-def name():
+def load_obj(file_path):
     try :
-        pass
-    
+        with open(file_path,'rb') as file_obj:
+            return pickle.load(file_obj)   
+        
     except Exception as e:
-        logging.info('error occured in the ')
+        logging.info('error occured in the load object ')
         raise custom_exception(e,sys)
 
