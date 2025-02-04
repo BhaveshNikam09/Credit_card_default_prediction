@@ -8,7 +8,7 @@ This project aims to predict whether a customer will default on their credit car
 - **Feature Engineering**: Select and create features that improve model performance.
 - **Modeling**: Train different machine learning models (Logistic Regression, Random Forest, XGBoost, etc.) for prediction.
 - **Model Evaluation**: Evaluate the models using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
-- **Hyperparameter Tuning**: Optimize the models to improve performance using GridSearchCV or RandomizedSearchCV.
+- **Hyperparameter Tuning**: Optimize the models to improve performance using GridSearchCV or RandomizedSearchCV and mainly the Optuna.
 - **Model Deployment**: Optionally, deploy the model using a web framework like Flask or FastAPI for real-time predictions.
 
 ## Technologies Used
