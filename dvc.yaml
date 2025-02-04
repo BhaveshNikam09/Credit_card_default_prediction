@@ -1,0 +1,17 @@
+stages:
+  train:
+    cmd: python app.py
+    deps:
+      - notebooks/data/Credit_Card.csv  # input file
+      - src\Creditcardfaultdetection\pipelines\training_pipeline.py       # source code
+    outs:
+      - model.pkl         # output model file
+
+  evaluate:
+    cmd: python evaluate.py model.pkl data/test_data.csv
+    deps:
+      - model.pkl
+      - artifacts/test_data.csv
+      - src\Creditcardfaultdetection\components\model_evaluation.py
+    outs:
+      - metrics.json
