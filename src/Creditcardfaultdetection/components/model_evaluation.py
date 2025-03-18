@@ -61,7 +61,16 @@ class ModelEvaluation:
                 accuracy, conf_matrix = self.eval_metrics(y_test, predicted_qualities)
                 
                 # Log accuracy metric
-                mlflow.log_metric("Accuracy", accuracy)
+                tn, fp, fn, tp = conf_matrix.ravel()  # Extract values from confusion matrix
+
+                mlflow.log_metric("Accuracy", accuracy)  
+                mlflow.log_metric("True Positives", tp)
+                mlflow.log_metric("False Positives", fp)
+                mlflow.log_metric("False Negatives", fn)
+                mlflow.log_metric("True Negatives", tn)
+                mlflow.autolog()  # Enables automatic logging, including some system metrics
+
+
                 
                 # Plot and log confusion matrix
                 self.plot_confusion_matrix(conf_matrix)

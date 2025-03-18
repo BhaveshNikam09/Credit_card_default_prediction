@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML/Credit%20card%20fraud%20detection/mlruns/0/80d1dcab723d4aadb6c091f4ad52643c/artifacts
+end_time: 1742300943045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80d1dcab723d4aadb6c091f4ad52643c
+run_name: serious-flea-541
+run_uuid: 80d1dcab723d4aadb6c091f4ad52643c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742300942824
+status: 4
+tags: []
+user_id: nikam

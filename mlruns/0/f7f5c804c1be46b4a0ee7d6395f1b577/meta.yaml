@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML/Credit%20card%20fraud%20detection/mlruns/0/f7f5c804c1be46b4a0ee7d6395f1b577/artifacts
+end_time: 1742301113522
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f7f5c804c1be46b4a0ee7d6395f1b577
+run_name: melodic-eel-981
+run_uuid: f7f5c804c1be46b4a0ee7d6395f1b577
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742301104501
+status: 3
+tags: []
+user_id: nikam
